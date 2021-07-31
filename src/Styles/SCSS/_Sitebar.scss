@@ -1,0 +1,62 @@
+@import "Util";
+.Sitebar-of--website {
+    overflow-y: auto;
+
+    @import "scrollbar";
+
+
+
+
+    .sitebar-contents {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .sitebar-item {
+            background: white;
+
+            .sitebar-link {
+                text-decoration: none;
+
+                &.sitebar-active {
+                    .navbar-icon-box {
+                        color: $navy;;
+                        background: $vl-blue;
+                        position: relative;
+                        z-index: 1;
+
+                        &::before{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            width: 5px;
+                            height:100%;
+                            background:$navy;
+                            left:0px;
+                            top:0px;
+                            border-top-right-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                        }
+                    }
+                }
+
+                .navbar-icon-box {
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    color: $grey;
+                    padding:10px 5px;
+                    .icon {
+                        font-size: 30px;
+                    }
+                    .icon-text {
+                        color: inherit;
+                        text-align: center;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

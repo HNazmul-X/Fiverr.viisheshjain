@@ -1,0 +1,190 @@
+@import "../Util";
+
+#superchat-page {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    & > section.column {
+        height: calc(100vh - 60px);
+        &.column.chatlist {
+            width: 30%;
+        }
+        &.column.chatbox {
+            width: 40%;
+        }
+        &.column.chatInfo {
+            width: 30%;
+        }
+
+        @import "../scrollbar";
+
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+    }
+    /* chat box css */
+    section.column.chatlist {
+        box-sizing: border-box;
+        overflow-x: hidden;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto 1fr;
+        border-right: 1px solid $border-thin;
+
+        .searchbar-area {
+            padding: 5px;
+            .input-group {
+                border: 1px solid $border-thin;
+                border-radius: 5px;
+                width: 83.3333333333% !important;
+                .input-group-text,
+                input.form-control {
+                    background: transparent;
+                    border: none;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+            [class*="col"] {
+                padding: 0px;
+            }
+
+            .upper-down {
+                align-items: center;
+                justify-content: center;
+                button {
+                    border: none;
+                    padding: 0px;
+                    margin: 0px;
+                    line-height: 0px;
+                    width: 30px;
+                    &:active {
+                        background: $grey;
+                        color: white;
+                        .input-group-text {
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+        .chatTabs-area {
+            box-shadow: -1px 3px 5px #0000002e;
+            .nav.nav-tabs {
+                .nav-item {
+                    width: calc(100% / 3);
+                    .nav-link {
+                        border: none;
+                        width: 100%;
+                        &.active {
+                            border: none;
+                            border-bottom: 3px solid $navy;
+                        }
+                    }
+                }
+            }
+        }
+
+        .rise-tricket {
+            padding: 10px 20px 7px 20px;
+            text-align: center;
+            border-bottom: 1px solid $border-thin;
+
+            button {
+                border: 2px solid $navy;
+                padding: 7px;
+                width: 90%;
+                color: $navy;
+                border-radius: 10px;
+                font-size: 18px;
+
+                .iconify {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .filter-buttons-group {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            // padding-bottom: 10px;
+            border-bottom: 1px solid $border-thin;
+
+            button {
+                // border:none;
+                border: 1px solid $border-thin;
+                padding: 5px 10px;
+                border-radius: 50px;
+
+                &.active {
+                    background: $orange;
+                    border: none;
+                    color: white;
+                }
+            }
+        }
+
+        & > section#all-tricket-wrapper {
+            overflow-y: auto;
+            @import "../scrollbar";
+            @extend .noselect;
+            
+            .trcketCard {
+                position: relative;
+                z-index: 1;
+                &.active {
+                    background: $vl-blue;
+                }
+                
+                font-size: 14px;
+                padding: 10px;
+                border-bottom: 1px solid $border-thin;
+
+                .title {
+                    font-size: 18px;
+                    .iconify {
+                        color: $navy;
+                        margin-right: 10px;
+                    }
+                }
+                .count {
+                    background: $orange;
+                    padding: 4px 9px;
+                    border-radius: 50%;
+                    color: white;
+                    font-size: 14px;
+                }
+                .three-dots {
+                    font-size: 30px;
+                    padding: 5px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    &:active{
+                    background: rgb(204, 204, 204);
+
+                    }
+                }
+
+                .call-icon {
+                    position: absolute;
+                    top: 46px;
+                    right: 30px;
+                    font-size: 30px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    border-radius: 50%;
+                    padding:5px;
+                    &:active{
+                        background:dimgray;
+                        color:white;
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-of-dashboard-spacer {
+  height: 50px;
+}
+
+.badge-btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.badge-btn.green {
+  background: #2ecc71;
+}
+
+.badge-btn.orange {
+  background: #f48a21;
+}
+
+.badge-btn.red {
+  background: #f48a21;
+}
+
+.noselect, #superchat-page section.column.chatlist > section#all-tricket-wrapper {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.Sitebar-of--website {
+  overflow-y: auto;
+}
+
+.Sitebar-of--website .badge-btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.Sitebar-of--website .badge-btn.green {
+  background: #2ecc71;
+}
+
+.Sitebar-of--website .badge-btn.orange {
+  background: #f48a21;
+}
+
+.Sitebar-of--website .badge-btn.red {
+  background: #f48a21;
+}
+
+.Sitebar-of--website .noselect, .Sitebar-of--website #superchat-page section.column.chatlist > section#all-tricket-wrapper, #superchat-page .Sitebar-of--website section.column.chatlist > section#all-tricket-wrapper {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.Sitebar-of--website {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: #888888;
+}
+
+.Sitebar-of--website::-webkit-scrollbar {
+  width: 5px;
+}
+
+.Sitebar-of--website::-webkit-scrollbar-thumb {
+  background: #888888;
+  width: 7px;
+  border-radius: 20px;
+}
+
+.Sitebar-of--website::-webkit-scrollbar-track-piece {
+  background: rgba(136, 136, 136, 0.4);
+}
+
+.Sitebar-of--website .sitebar-contents {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.Sitebar-of--website .sitebar-contents .sitebar-item {
+  background: white;
+}
+
+.Sitebar-of--website .sitebar-contents .sitebar-item .sitebar-link {
+  text-decoration: none;
+}
+
+.Sitebar-of--website .sitebar-contents .sitebar-item .sitebar-link.sitebar-active .navbar-icon-box {
+  color: #1d3f67;
+  background: #e7f2ff;
+  position: relative;
+  z-index: 1;
+}
+
+.Sitebar-of--website .sitebar-contents .sitebar-item .sitebar-link.sitebar-active .navbar-icon-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #1d3f67;
+  left: 0px;
+  top: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.Sitebar-of--website .sitebar-contents .sitebar-item .sitebar-link .navbar-icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #888888;
+  padding: 10px 5px;
+}
+
+.Sitebar-of--website .sitebar-contents .sitebar-item .sitebar-link .navbar-icon-box .icon {
+  font-size: 30px;
+}
+
+.Sitebar-of--website .sitebar-contents .sitebar-item .sitebar-link .navbar-icon-box .icon-text {
+  color: inherit;
+  text-align: center;
+  font-size: 11px;
+}
+
+/* allpages css here */
+/* super chat page css */
+.badge-btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.badge-btn.green {
+  background: #2ecc71;
+}
+
+.badge-btn.orange {
+  background: #f48a21;
+}
+
+.badge-btn.red {
+  background: #f48a21;
+}
+
+.noselect, #superchat-page section.column.chatlist > section#all-tricket-wrapper {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.badge-btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.badge-btn.green {
+  background: #2ecc71;
+}
+
+.badge-btn.orange {
+  background: #f48a21;
+}
+
+.badge-btn.red {
+  background: #f48a21;
+}
+
+.noselect, #superchat-page section.column.chatlist > section#all-tricket-wrapper {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#superchat-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  /* chat box css */
+}
+
+#superchat-page > section.column {
+  height: calc(100vh - 60px);
+}
+
+#superchat-page > section.column.column.chatlist {
+  width: 30%;
+}
+
+#superchat-page > section.column.column.chatbox {
+  width: 40%;
+}
+
+#superchat-page > section.column.column.chatInfo {
+  width: 30%;
+}
+
+#superchat-page > section.column .badge-btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+#superchat-page > section.column .badge-btn.green {
+  background: #2ecc71;
+}
+
+#superchat-page > section.column .badge-btn.orange {
+  background: #f48a21;
+}
+
+#superchat-page > section.column .badge-btn.red {
+  background: #f48a21;
+}
+
+#superchat-page > section.column .noselect, #superchat-page > section.column.chatlist > section#all-tricket-wrapper {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#superchat-page > section.column {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: #888888;
+}
+
+#superchat-page > section.column::-webkit-scrollbar {
+  width: 5px;
+}
+
+#superchat-page > section.column::-webkit-scrollbar-thumb {
+  background: #888888;
+  width: 7px;
+  border-radius: 20px;
+}
+
+#superchat-page > section.column::-webkit-scrollbar-track-piece {
+  background: rgba(136, 136, 136, 0.4);
+}
+
+#superchat-page > section.column::-webkit-scrollbar {
+  width: 7px;
+}
+
+#superchat-page section.column.chatlist {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto auto auto 1fr;
+      grid-template-rows: auto auto auto auto 1fr;
+  border-right: 1px solid rgba(136, 136, 136, 0.5);
+}
+
+#superchat-page section.column.chatlist .searchbar-area {
+  padding: 5px;
+}
+
+#superchat-page section.column.chatlist .searchbar-area .input-group {
+  border: 1px solid rgba(136, 136, 136, 0.5);
+  border-radius: 5px;
+  width: 83.3333333333% !important;
+}
+
+#superchat-page section.column.chatlist .searchbar-area .input-group .input-group-text,
+#superchat-page section.column.chatlist .searchbar-area .input-group input.form-control {
+  background: transparent;
+  border: none;
+}
+
+#superchat-page section.column.chatlist .searchbar-area .input-group .input-group-text:focus,
+#superchat-page section.column.chatlist .searchbar-area .input-group input.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#superchat-page section.column.chatlist .searchbar-area [class*="col"] {
+  padding: 0px;
+}
+
+#superchat-page section.column.chatlist .searchbar-area .upper-down {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#superchat-page section.column.chatlist .searchbar-area .upper-down button {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 0px;
+  width: 30px;
+}
+
+#superchat-page section.column.chatlist .searchbar-area .upper-down button:active {
+  background: #888888;
+  color: white;
+}
+
+#superchat-page section.column.chatlist .searchbar-area .upper-down button:active .input-group-text {
+  background: transparent;
+}
+
+#superchat-page section.column.chatlist .chatTabs-area {
+  -webkit-box-shadow: -1px 3px 5px #0000002e;
+          box-shadow: -1px 3px 5px #0000002e;
+}
+
+#superchat-page section.column.chatlist .chatTabs-area .nav.nav-tabs .nav-item {
+  width: calc(100% / 3);
+}
+
+#superchat-page section.column.chatlist .chatTabs-area .nav.nav-tabs .nav-item .nav-link {
+  border: none;
+  width: 100%;
+}
+
+#superchat-page section.column.chatlist .chatTabs-area .nav.nav-tabs .nav-item .nav-link.active {
+  border: none;
+  border-bottom: 3px solid #1d3f67;
+}
+
+#superchat-page section.column.chatlist .rise-tricket {
+  padding: 10px 20px 7px 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.5);
+}
+
+#superchat-page section.column.chatlist .rise-tricket button {
+  border: 2px solid #1d3f67;
+  padding: 7px;
+  width: 90%;
+  color: #1d3f67;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#superchat-page section.column.chatlist .rise-tricket button .iconify {
+  margin-right: 10px;
+}
+
+#superchat-page section.column.chatlist .filter-buttons-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.5);
+}
+
+#superchat-page section.column.chatlist .filter-buttons-group button {
+  border: 1px solid rgba(136, 136, 136, 0.5);
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+#superchat-page section.column.chatlist .filter-buttons-group button.active {
+  background: #f48a21;
+  border: none;
+  color: white;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper {
+  overflow-y: auto;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .badge-btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .badge-btn.green {
+  background: #2ecc71;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .badge-btn.orange {
+  background: #f48a21;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .badge-btn.red {
+  background: #f48a21;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .noselect, #superchat-page section.column.chatlist > section#all-tricket-wrapper section.column.chatlist > section#all-tricket-wrapper {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: #888888;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper::-webkit-scrollbar-thumb {
+  background: #888888;
+  width: 7px;
+  border-radius: 20px;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper::-webkit-scrollbar-track-piece {
+  background: rgba(136, 136, 136, 0.4);
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .trcketCard {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.5);
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .trcketCard.active {
+  background: #e7f2ff;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .trcketCard .title {
+  font-size: 18px;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .trcketCard .title .iconify {
+  color: #1d3f67;
+  margin-right: 10px;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .trcketCard .count {
+  background: #f48a21;
+  padding: 4px 9px;
+  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .trcketCard .three-dots {
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .trcketCard .three-dots:active {
+  background: #cccccc;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .trcketCard .call-icon {
+  position: absolute;
+  top: 46px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#superchat-page section.column.chatlist > section#all-tricket-wrapper .trcketCard .call-icon:active {
+  background: dimgray;
+  color: white;
+}
+/*# sourceMappingURL=Style.css.map */
