@@ -1,4 +1,4 @@
-import { Icon, InlineIcon } from "@iconify/react";
+import {  InlineIcon } from "@iconify/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
