@@ -44,7 +44,7 @@ const Chatlist = ({ className }) => {
 
 
             <section id="all-tricket-wrapper">
-                <TricketCard/>
+                <TricketCard isactive/>
                 <TricketCard/>
                 <TricketCard/>
                 <TricketCard/>

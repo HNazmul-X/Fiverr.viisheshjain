@@ -7,7 +7,7 @@ const TricketCard = ({
     isactive
 }) => {
     return (
-        <TricketCardSC className={`${isactive ? "active" : ""}trcketCard`}>
+        <TricketCardSC className={`${isactive ? "active" : ""} trcketCard`}>
             <div className="row w-100">
                 <div className="title col-10">
                     <InlineIcon className="fs-4" icon="bi:play-circle-fill" />

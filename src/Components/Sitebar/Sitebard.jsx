@@ -11,7 +11,6 @@ const Sitebar = () => {
         left: 0px;
         top: 50px;
         background: white;
-        border: 1px solid #888888;
     `;
 
     return (

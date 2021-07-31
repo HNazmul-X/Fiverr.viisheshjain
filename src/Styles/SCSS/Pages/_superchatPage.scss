@@ -23,7 +23,7 @@
             width: 7px;
         }
     }
-    /* chat box css */
+    /* chatlist css */
     section.column.chatlist {
         box-sizing: border-box;
         overflow-x: hidden;
@@ -132,14 +132,14 @@
             overflow-y: auto;
             @import "../scrollbar";
             @extend .noselect;
-            
+
             .trcketCard {
                 position: relative;
                 z-index: 1;
                 &.active {
                     background: $vl-blue;
                 }
-                
+
                 font-size: 14px;
                 padding: 10px;
                 border-bottom: 1px solid $border-thin;
@@ -163,9 +163,8 @@
                     padding: 5px;
                     border-radius: 50%;
                     cursor: pointer;
-                    &:active{
-                    background: rgb(204, 204, 204);
-
+                    &:active {
+                        background: rgb(204, 204, 204);
                     }
                 }
 
@@ -177,12 +176,108 @@
                     cursor: pointer;
                     transition: 0.2s;
                     border-radius: 50%;
-                    padding:5px;
-                    &:active{
-                        background:dimgray;
-                        color:white;
+                    padding: 5px;
+                    &:active {
+                        background: dimgray;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    /* chatbox css here */
+    /* ========================== */
+
+    section.column.chatbox {
+        height: calc(100vh - 60px);
+        border-right: 2px solid $border-thin;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+
+        .rise-a-tricket {
+            padding: 10px;
+            border-bottom: 1px solid $border-thin;
+        }
+
+        .chat-wrapper {
+            padding: 10px;
+            overflow-y: auto;
+            @import "../scrollbar";
+
+            #Product_ChatCard {
+                max-width: 70%;
+                margin-left: auto;
+                font-size: 14px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                overflow: hidden;
+                cursor: pointer;
+                p {
+                    margin: 0px;
+                }
+                h5 {
+                    margin: 0px;
+                }
+
+                .thumbnail-area {
+                    width: 100%;
+                    height: 140px;
+                    overflow: hidden;
+
+                    img.product-img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .description-area {
+                    padding: 10px;
+
+                    title {
+                    }
+                    requestor {
+                    }
+                    location {
+                    }
+                    status {
+                    }
+                    time {
+                    }
+                }
+            }
+        }
+
+        .massage-sender-options {
+            .input-group {
+                padding: 5px;
+                border-top: 1px solid $border-thin;
+                input,
+                span,
+                .input-group-text,
+                .form-control {
+                    border: none;
+                    &:focus{
+                        box-shadow: none;
 
                     }
+                }
+                .input-group-text {
+                    background: none;
+                    padding: 0px;
+                    font-size: 20px;
+                    padding: 2px;
+                }
+                .emoji {
+                    font-size: 25px;
+                    padding-right: 5px;
+                    border-right: 3px solid $border-thin;
+                }
+                .send {
+                    font-size: 30px;
+                    padding-left: 5px;
+                    border-left: 2px solid $border-thin;
+                    color:$navy;
                 }
             }
         }

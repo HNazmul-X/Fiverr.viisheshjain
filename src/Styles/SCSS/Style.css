@@ -15,8 +15,115 @@ ul {
   padding: 0px;
 }
 
+.badge-btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.badge-btn.green {
+  background: #2ecc71;
+}
+
+.badge-btn.orange {
+  background: #f48a21;
+}
+
+.badge-btn.red {
+  background: #f48a21;
+}
+
+.noselect, #superchat-page section.column.chatlist > section#all-tricket-wrapper {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 .navbar-of-dashboard-spacer {
   height: 50px;
+}
+
+.Navbar_of_dashboard {
+  border-bottom: rgba(136, 136, 136, 0.4) 1px solid;
+  padding: 0px 20px;
+}
+
+.Navbar_of_dashboard > .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.Navbar_of_dashboard > .row > .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.Navbar_of_dashboard > .row > .items > .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  color: #1d3f67;
+}
+
+.Navbar_of_dashboard > .row > .items > .user-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.Navbar_of_dashboard > .row > .items > .user-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Navbar_of_dashboard .navbar-icon-box {
+  padding: 5px;
+  display: inline-block;
+  position: relative;
+}
+
+.Navbar_of_dashboard .navbar-icon-box .iconify {
+  font-size: 30px;
+}
+
+.Navbar_of_dashboard .navbar-icon-box .alert-count {
+  padding: 2px 4px;
+  border-radius: 50%;
+  font-size: 11px;
+  background: #f48a21;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  right: 2px;
 }
 
 .badge-btn {
@@ -55,6 +162,7 @@ ul {
 
 .Sitebar-of--website {
   overflow-y: auto;
+  border-right: 1px solid rgba(136, 136, 136, 0.4);
 }
 
 .Sitebar-of--website .badge-btn {
@@ -253,7 +361,9 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  /* chat box css */
+  /* chatlist css */
+  /* chatbox css here */
+  /* ========================== */
 }
 
 #superchat-page > section.column {
@@ -340,7 +450,7 @@ ul {
       grid-template-columns: auto;
   -ms-grid-rows: auto auto auto auto 1fr;
       grid-template-rows: auto auto auto auto 1fr;
-  border-right: 1px solid rgba(136, 136, 136, 0.5);
+  border-right: 1px solid rgba(136, 136, 136, 0.4);
 }
 
 #superchat-page section.column.chatlist .searchbar-area {
@@ -348,7 +458,7 @@ ul {
 }
 
 #superchat-page section.column.chatlist .searchbar-area .input-group {
-  border: 1px solid rgba(136, 136, 136, 0.5);
+  border: 1px solid rgba(136, 136, 136, 0.4);
   border-radius: 5px;
   width: 83.3333333333% !important;
 }
@@ -417,7 +527,7 @@ ul {
 #superchat-page section.column.chatlist .rise-tricket {
   padding: 10px 20px 7px 20px;
   text-align: center;
-  border-bottom: 1px solid rgba(136, 136, 136, 0.5);
+  border-bottom: 1px solid rgba(136, 136, 136, 0.4);
 }
 
 #superchat-page section.column.chatlist .rise-tricket button {
@@ -439,11 +549,11 @@ ul {
   display: flex;
   gap: 10px;
   padding: 10px;
-  border-bottom: 1px solid rgba(136, 136, 136, 0.5);
+  border-bottom: 1px solid rgba(136, 136, 136, 0.4);
 }
 
 #superchat-page section.column.chatlist .filter-buttons-group button {
-  border: 1px solid rgba(136, 136, 136, 0.5);
+  border: 1px solid rgba(136, 136, 136, 0.4);
   padding: 5px 10px;
   border-radius: 50px;
 }
@@ -517,7 +627,7 @@ ul {
   z-index: 1;
   font-size: 14px;
   padding: 10px;
-  border-bottom: 1px solid rgba(136, 136, 136, 0.5);
+  border-bottom: 1px solid rgba(136, 136, 136, 0.4);
 }
 
 #superchat-page section.column.chatlist > section#all-tricket-wrapper .trcketCard.active {
@@ -567,5 +677,153 @@ ul {
 #superchat-page section.column.chatlist > section#all-tricket-wrapper .trcketCard .call-icon:active {
   background: dimgray;
   color: white;
+}
+
+#superchat-page section.column.chatbox {
+  height: calc(100vh - 60px);
+  border-right: 2px solid rgba(136, 136, 136, 0.4);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+
+#superchat-page section.column.chatbox .rise-a-tricket {
+  padding: 10px;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.4);
+}
+
+#superchat-page section.column.chatbox .chat-wrapper {
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper .badge-btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper .badge-btn.green {
+  background: #2ecc71;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper .badge-btn.orange {
+  background: #f48a21;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper .badge-btn.red {
+  background: #f48a21;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper .noselect, #superchat-page section.column.chatbox .chat-wrapper section.column.chatlist > section#all-tricket-wrapper {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#superchat-page section.column.chatbox .chat-wrapper {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: #888888;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper::-webkit-scrollbar-thumb {
+  background: #888888;
+  width: 7px;
+  border-radius: 20px;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper::-webkit-scrollbar-track-piece {
+  background: rgba(136, 136, 136, 0.4);
+}
+
+#superchat-page section.column.chatbox .chat-wrapper #Product_ChatCard {
+  max-width: 70%;
+  margin-left: auto;
+  font-size: 14px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper #Product_ChatCard p {
+  margin: 0px;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper #Product_ChatCard h5 {
+  margin: 0px;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper #Product_ChatCard .thumbnail-area {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper #Product_ChatCard .thumbnail-area img.product-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#superchat-page section.column.chatbox .chat-wrapper #Product_ChatCard .description-area {
+  padding: 10px;
+}
+
+#superchat-page section.column.chatbox .massage-sender-options .input-group {
+  padding: 5px;
+  border-top: 1px solid rgba(136, 136, 136, 0.4);
+}
+
+#superchat-page section.column.chatbox .massage-sender-options .input-group input,
+#superchat-page section.column.chatbox .massage-sender-options .input-group span,
+#superchat-page section.column.chatbox .massage-sender-options .input-group .input-group-text,
+#superchat-page section.column.chatbox .massage-sender-options .input-group .form-control {
+  border: none;
+}
+
+#superchat-page section.column.chatbox .massage-sender-options .input-group input:focus,
+#superchat-page section.column.chatbox .massage-sender-options .input-group span:focus,
+#superchat-page section.column.chatbox .massage-sender-options .input-group .input-group-text:focus,
+#superchat-page section.column.chatbox .massage-sender-options .input-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#superchat-page section.column.chatbox .massage-sender-options .input-group .input-group-text {
+  background: none;
+  padding: 0px;
+  font-size: 20px;
+  padding: 2px;
+}
+
+#superchat-page section.column.chatbox .massage-sender-options .input-group .emoji {
+  font-size: 25px;
+  padding-right: 5px;
+  border-right: 3px solid rgba(136, 136, 136, 0.4);
+}
+
+#superchat-page section.column.chatbox .massage-sender-options .input-group .send {
+  font-size: 30px;
+  padding-left: 5px;
+  border-left: 2px solid rgba(136, 136, 136, 0.4);
+  color: #1d3f67;
 }
 /*# sourceMappingURL=Style.css.map */

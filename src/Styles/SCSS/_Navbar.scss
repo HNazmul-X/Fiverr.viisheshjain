@@ -1,3 +1,66 @@
+@import "Util";
 .navbar-of-dashboard-spacer{
     height:50px;
+    
+}
+
+.Navbar_of_dashboard{
+    border-bottom: $border-thin 1px solid;
+    padding:0px 20px;
+    
+
+    &>.row{
+        align-items: center;
+        height: 100%;
+        &>.logo{
+
+    }
+    &>.items{
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+
+        &>.icons{
+            display: flex;
+            height: 100%;;
+            align-items: center;
+            gap: 20px;
+            color:$navy;
+
+        }
+
+        &>.user-icon{
+            width:50px;
+            height:50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: 20px ;
+            img{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+            }
+        }
+    }
+    }
+
+
+    .navbar-icon-box{
+        padding:5px;
+        display: inline-block;
+        position: relative;
+        .iconify{
+            font-size:30px;
+        }
+        .alert-count{
+            padding:2px 4px;
+            border-radius: 50%;
+            font-size: 11px;
+            background:$orange;
+            color:white;
+            user-select: none;
+            position: absolute;
+            right:2px;
+        }
+    }
 }

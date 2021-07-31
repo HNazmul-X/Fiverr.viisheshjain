@@ -1,6 +1,7 @@
 @import "Util";
 .Sitebar-of--website {
     overflow-y: auto;
+    border-right: 1px solid $border-thin;
 
     @import "scrollbar";
 
